@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+            <h1>Formulário de Cadastro</h1>
+    </header>
+   
+       <form action="/pagina-processa-dados-do-form.html" method="get" target="_blank">
+           <fieldset>
+               <div>
+                   <label for="nome">Nome Completo:</label>
+                   <input id="nome" type="text" name="usuario_nome" required>
+               </div>
+               <div>
+                <label for="data">Data de nascimento:</label>
+                <input id="data" type="date" name="usuario_data" required>
+            </div>
+               <div>
+                   <label for="contato">Contato:</label>
+                   <input id="contato" type="tel" name="usuario_contato" required>
+               </div>
+               <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="usuario_email" required>
+            </div>
+            <div>
+                <label>Sexo:</label>
+                <label for="sexo">
+                    <input id="sexo" type="radio" name="usuario_sexo" value="masculino" >Masculino
+                </label>
+                <label for="sexo">
+                    <input id="sexo" type="radio" name="usuario_sexo" value="feminino">Feminino
+                </label>
+            </div>
+            <div>
+                <label>Linguagem que utiliza:</label>
+                <label class="ling" for="tecnologia1">
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Javascript">Javascript
+                </label>
+                <label class="ling" for="tecnologia2">
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="C#">C#
+                </label>
+                <label class="ling" for="tecnologia3">
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Python">Python
+                </label>
+                </label>
+            </div>
+            <div>
+                <label for="texto">Fale sobre voçê:</label>
+                <textarea name="texto" id="texto" style="width: 530px;" rows="6"></textarea>
+            </div>
+               <div >
+                 <button type="submit">
+                     Enviar
+                 </button>
+                 <button type="reset">
+                    Limpar
+                 </button>
+               </div>
+               <div>
+                   <input formmethod="get" type="submit" style="width:100px" formtarget="_blank">
+               </div>
+               
+           </fieldset>
+       </form>
+
+</body>
+</html>

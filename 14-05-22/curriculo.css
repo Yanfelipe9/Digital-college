@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+header{
+    text-align: center;
+    background-color: #E8866C;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0; 
+    color: white;
+}
+
+body{
+    background-color: #F8ECDE;
+}
+
+table{
+    border: solid;
+    border-collapse: collapse;
+    
+}
+ td,th{
+     border: solid;
+     padding-left:10px ;
+     padding-right: 10px;
+ }
+ th{
+     background-color: #C5D0C1;
+ }
+
+ a{
+     color: black;
+ }
+
+ a:hover{
+     color: #E8866C;
+     
+ }
